@@ -1,5 +1,7 @@
 # NodeJs Indonesia Blog
 
+Link to [NodeJs Indonesia Blog](https://nodejs-indonesia.github.io/blogs/)
+
 Generate with [wintersmith](https://github.com/jnordberg/wintersmith) template.
 
 [![License](https://img.shields.io/github/license/nodejs-indonesia/blogs.svg)](https://github.com/nodejs-indonesia/blogs)
