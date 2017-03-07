@@ -1,6 +1,6 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "https://nodejs-indonesia.github.io/blogs",
     "name": "NodeJs Indonesia Blog",
     "owner": "NodeJs Indonesia",
     "description": "Articles from NodeJs Indonesia"
