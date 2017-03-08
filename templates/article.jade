@@ -13,6 +13,12 @@ block header
   p.author
     | #{ 'Written by ' }
     mixin author(page.metadata.author)
+    
+  div.article__tags   
+    span Tags :    
+    - var tags = env.helpers.getTagsFromArticle(page)
+      each tag in tags
+        a(href=locals.url+env.helpers.getTagHome(tag).url)= tag
 
 block content
   article.article

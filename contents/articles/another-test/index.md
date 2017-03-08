@@ -3,6 +3,7 @@ title: Code and stuff!
 author: the-wintersmith
 date: 2012-10-01 15:00
 template: article.jade
+tags: Algorithm, a happy story
 ---
 
 Syntax highlighting with [highlight.js](http://softwaremaniacs.org/soft/highlight/en/).

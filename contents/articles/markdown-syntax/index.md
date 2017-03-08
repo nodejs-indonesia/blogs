@@ -3,6 +3,7 @@ title: Markdown syntax
 author: John Gruber
 date: 2012-02-02
 template: article.jade
+tags: Algorithm, a happy story
 ---
 
 Full markdown syntax taken from John Gruber's [Daring Fireball](http://daringfireball.net/projects/markdown/syntax).

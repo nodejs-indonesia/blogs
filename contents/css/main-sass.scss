@@ -139,12 +139,11 @@ hr {
 }
 
 .author {
+    font-weight: 400;
     font-variant: small-caps;
     letter-spacing: 1px;
     text-transform: lowercase;
     text-rendering: auto;
-    margin-bottom: .5em;
-    font-size: 16px;
 }
 
 body.article-detail > header h1 {
@@ -194,15 +193,6 @@ footer .copy a {
     color: #8e8e8e;
 }
 
-footer .social{
-    text-align: center;
-}
-
-footer .social a {
-    color: #8e8e8e;
-    padding: 10px;
-}
-
 
 /* article */
 
@@ -246,20 +236,7 @@ footer .social a {
     display: block;
     width: 100%;
 }
-.article__tags span{
-    font-size: 14px;
-    padding-right: 5px;
-}
-.article__tags a{
-    font-size: 14px;
-    padding: 2px 5px;
-    margin: 0 3px;
-    background-color: #008c34;
-    color: #fff;
-}
-.article__tags a:hover{
-    color: #fff;
-}
+
 
 /* archive */
 
