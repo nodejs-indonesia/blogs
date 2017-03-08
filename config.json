@@ -1,6 +1,7 @@
 {
   "locals": {
-    "url": "https://nodejs-indonesia.github.io/blogs",
+    "url": "https://nodejs-indonesia.github.io/blogs/",
+    "logoUrl": "https://nodejs-indonesia.github.io/nodejs-indonesia.jpg",
     "name": "NodeJs Indonesia Blog",
     "owner": "NodeJs Indonesia",
     "description": "Articles from NodeJs Indonesia"
