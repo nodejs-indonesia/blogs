@@ -3,25 +3,31 @@ extends layout
 
 block content
   include author
+  
   each article in articles
     article.article.intro
-      header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=article.url)= article.title
-      section.content
+      header.article__header
+        div.article__date-block
+
+          div.article__date
+            i.fa.fa-calendar
+            =moment.utc(article.date).format('DD')
+          div.article__month= moment.utc(article.date).format('MMM YYYY')
+        div.article__title
+          a(href=locals.url+article.url)= article.title
+
+      section.article__content
         if article.intro.length > 0
           != typogr(article.intro).typogrify()
         if article.hasMore
           p.more
-            a(href=article.url) more
+            a(href=locals.url+article.url) read more
 
 block prepend footer
   div.nav
     if prevPage
-      a(href=prevPage.url) &laquo; Newer
+      a(href=locals.url+prevPage.url) &laquo; See newer
     else
-      a(href='/archive.html') &laquo; Archives
+      a(href='/archive.html') &laquo; See Archives
     if nextPage
-      a(href=nextPage.url) Next page &raquo;
+      a(href=locals.url+nextPage.url) See older &raquo;
