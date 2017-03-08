@@ -26,6 +26,11 @@ Install depedency to your npm
 npm install
 ```
 
+Change config.json value to your local
+```
+"url": "http://localhost:8080"
+```
+
 Run project
 ```
 wintersmith preview
