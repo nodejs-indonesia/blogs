@@ -1,12 +1,18 @@
 {
   "locals": {
-    "url": "https://nodejs-indonesia.github.io/blogs",
+    "url": "https://nodejs-indonesia.github.io/blogs/",
+    "logoUrl": "https://nodejs-indonesia.github.io/nodejs-indonesia.jpg",
     "name": "NodeJs Indonesia Blog",
     "owner": "NodeJs Indonesia",
-    "description": "Articles from NodeJs Indonesia"
+    "description": "Articles from NodeJs Indonesia",
+    "sitemap": "sitemap.xml"
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "wintersmith-sassify",    
+    "wintersmith-contents",
+    "wintersmith-robots",
+    "wintersmith-tag"
   ],
   "require": {
     "moment": "moment",
@@ -21,6 +27,14 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 3
+    "perPage": 5
+  },
+  "sassify": {
+    "outputStyle": "compressed",
+    "sourceComments": "false",
+    "sourceMap": false
+  },
+  "tag": {
+      "perPage": 4
   }
 }

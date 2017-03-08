@@ -2,7 +2,10 @@
   "dependencies": {
     "moment": "2.3.x",
     "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "typogr": "0.5.x",
+    "wintersmith-sassify": "1.0.2",
+    "wintersmith-robots": "",
+    "wintersmith-tag": ""
   },
-  "private": "true"
+  "private": "false"
 }

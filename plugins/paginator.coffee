@@ -10,8 +10,17 @@ module.exports = (env, callback) ->
     filename: 'page/%d/index.html' # filename for rest of pages
     perPage: 2 # number of articles per page
 
+  # modify by wintersmith-tag
+  tagDefaults = 
+    filename: 'tag/%s/%d/index.html'
+
   # assign defaults any option not set in the config file
   options = env.config.paginator or {}
+  
+  # modify by wintersmith-tag
+  for key, value of tagDefaults
+    options[key] ?= tagDefaults[key]
+
   for key, value of defaults
     options[key] ?= defaults[key]
 
