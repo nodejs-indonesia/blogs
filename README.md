@@ -24,6 +24,8 @@ npm install wintersmith -g
 Install depedency to your npm 
 ```
 npm install
+-- OR --
+yarn install
 ```
 
 Change config.json value to your local
