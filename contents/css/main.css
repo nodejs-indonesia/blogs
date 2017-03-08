@@ -30,12 +30,16 @@ body {
     margin: 0 auto;
 }
 
-body,
-a {
+body {
     color: #999;
 }
 
-a:hover {
+body a {
+    text-decoration: none;
+    color: #008c34;
+}
+
+body a:hover {
     text-decoration: underline;
     color: #008c34;
 }
@@ -134,7 +138,7 @@ hr {
     color: #008c34;
 }
 
-.header .author {
+.author {
     font-weight: 400;
     font-variant: small-caps;
     letter-spacing: 1px;
@@ -170,23 +174,12 @@ footer .nav {
 footer .nav a {
     font-size: 16px;
     padding: 0 .5em;
-    text-decoration: none;
 }
 
 footer .about {
     font-size: .7em;
     padding: 2.2em 3em;
     border-top: 1px dashed #d2d2d2;
-    /*
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  -ms-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 2em;
-  -moz-column-gap: 2em;
-  -ms-column-gap: 2em;
-  column-gap: 2em;
-  */
 }
 
 footer .copy {
